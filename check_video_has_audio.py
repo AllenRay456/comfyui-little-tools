@@ -29,7 +29,7 @@ class CheckVideoHasAudio:
             waveform, sample_rate = torchaudio.load(aud.name)
             audio = {"waveform": waveform.unsqueeze(0), "sample_rate": sample_rate}
         except:
-            raise ValueError(f"视频 {video} 不包含音频轨道或音频提取失败。请确保输入的视频包含音频。")
+            raise ValueError(f"视频 {video_path} 不包含音频轨道或音频提取失败。请确保输入的视频包含音频。")
         return (video_path,audio)
 
 NODE_CLASS_MAPPINGS = {

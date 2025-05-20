@@ -1,6 +1,8 @@
 import os
 import tempfile
 import torchaudio
+import folder_paths
+input_dir = folder_paths.get_input_directory()
 
 class CheckVideoHasAudio:
     @classmethod

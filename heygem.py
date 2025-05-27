@@ -37,7 +37,7 @@ heygem_dir = os.path.join("/xgc_heygem_data/face2face/")
 os.makedirs(heygem_dir,exist_ok=True)
 output_dir = folder_paths.get_output_directory()
 
-class HeyGemNode:
+class HeyGemTool:
 
     @classmethod
     def INPUT_TYPES(s):
@@ -134,7 +134,7 @@ class HeyGemNode:
 # A dictionary that contains all nodes you want to export with their names
 # NOTE: names should be globally unique
 NODE_CLASS_MAPPINGS = {
-    "HeygemTool": HeyGemNode
+    "HeygemTool": HeyGemTool
 }
 
 # A dictionary that contains the friendly/humanly readable titles for the nodes
